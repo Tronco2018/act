@@ -28,7 +28,7 @@ read_loop:
 	mov $3, %eax
 	mov %esi, %ebx		# FD saved in %esi
 	lea file_buf, %ecx
-	mov $512, %edx
+	mov $65536, %edx
 	int $0x80
 
 	cmp $0, %eax
@@ -100,4 +100,4 @@ file_not_found_err_msg_len = . - file_not_found_err_msg
 # -- FILE BUFFER -- #
 .section .bss
 file_buf:
-	.skip 512
+	.skip 65536
