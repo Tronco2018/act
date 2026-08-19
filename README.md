@@ -2,9 +2,7 @@
 A simple and bloat free way to read your files
 
 ## Usage
-```bash
-    act <filename>
-```
+`act <filename>`
 
 ## Building
 To build the binary use the makefile present in the directory, **the current setup builds the binary with i386 as the target architecture**. Begin retrocompatible you can run it on all x86_64 systems.
