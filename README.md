@@ -11,11 +11,11 @@ To build the binary use the makefile present in the directory, **the current set
 To install the tool run the following commands
 ```bash
     make
-    make install
+    sudo make install
 ```
 To remove the tool from your machine do
 ```bash
-    make uninstall
+    sudo make uninstall
 ```
 To change the installation destination you can use
 ```bash
