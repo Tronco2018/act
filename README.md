@@ -7,6 +7,21 @@ A simple and bloat free way to read your files
 ## Building
 To build the binary use the makefile present in the directory, **the current setup builds the binary with i386 as the target architecture**. Begin retrocompatible you can run it on all x86_64 systems.
 
+### Installing
+To install the tool run the following commands
+```bash
+    make
+    make install
+```
+To remove the tool from your machine do
+```bash
+    make uninstall
+```
+To change the installation destination you can use
+```bash
+    make DESTDIR=rootfs/usr/sbin install    
+```
+
 ## Language
 The whole tool is written in x86 Assembly with AT&T syntax.
 

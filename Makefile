@@ -13,6 +13,7 @@ link: build
 $(TARGET): link
 
 install:
+	mkdir -p $(DESTDIR)
 	install -m 755 $(TARGET) $(DESTDIR)/$(TARGET)
 
 uninstall:
